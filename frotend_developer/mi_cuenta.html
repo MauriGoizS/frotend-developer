@@ -12,7 +12,7 @@
         :root {
             --white: #ffffff;
             --black: #000000;
-            --veri-ligth-pink: #c7c7c7;
+            --very-ligth-pink: #c7c7c7;
             --hospital-green: #ACD9B2;
             --text-input-field: #F7F7F7;
             --sm: 14px;
@@ -58,29 +58,16 @@
             font-weight: bold;
             margin-bottom: 4px;
         }
-        .input {
-            background-color: var(--text-input-field);
-            border: none;
+        .value {
+            color: var(--very-ligth-pink);
+            font-weight: var(--md);
+            margin: 8px 0 32px 0;
+        }
+        .secondary-button {
+            background-color: var(--white);
             border-radius: 8px;
-            height: 30px;
-            font-size: var(--md);
-            padding: 6px;
-            margin-bottom: 12px;
-        }
-/*        .input-name{
-
-        }
-        .input-email{
-
-        } */
-        .input-password {
-            margin-bottom: 22px;
-        }
-        .primary-button {
-            background-color: var(--hospital-green);
-            border-radius: 8px;
-            border: none var(--hospital-green);
-            color: var(--white);
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
             width: 100%;
             cursor: pointer;
             font-size: var(--md);
@@ -110,16 +97,16 @@
             <form action="/" class="form">
                 <div>
                     <label for="name" class="label">Name</label>
-                    <input type="text" id="name" placeholder="Mauricio" class="input input-name">
+                    <p class="value">Camila Yokoo</p>
     
                     <label for="email" class="label">Email</label>
-                    <input type="text" id="email" placeholder="text123@example.com" class="input input-email">
+                    <p class="value">camilayokoo@gmail.com</p>
     
                     <label for="password" class="label">Password</label>
-                    <input type="password" id="password" placeholder="*********" class="input input-password">
+                    <p class="value">***********</p>
     
                 </div>
-                <input type="submit" value="CREATE" class="primary-button login-button">
+                <input type="submit" value="CREATE" class="secondary-button login-button">
             </form>
         </div>
     </div>
